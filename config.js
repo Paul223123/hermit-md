@@ -16,11 +16,11 @@ process.env.NODE_OPTIONS = '--max_old_space_size=2560'
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG)
 module.exports = {
 	VERSION: 'v4.4.1', 
-    SESSION_ID: process.env.SESSION_ID || '10_28_H_E_R_M_I_T_3KNPACL',
+    SESSION_ID: process.env.SESSION_ID || '10_28_H_E_R_M_I_T_XZ5EYLP',
     MODE: (process.env.MODE || 'public').toLowerCase(),
-    HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+    HANDLERS: (process.env.PREFIX || '^[!]').trim(),
     SEND_READ: (process.env.READ_COMMAND || false),
-    READ_MSG: process.env.READ_MSG === 'false', 
+    READ_MSG: process.env.READ_MSG === 'true', 
     MSG_LOG: convertToBool(process.env.LOG_MSG) || false, 
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
@@ -47,7 +47,7 @@ module.exports = {
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
         API_KEY: process.env.HEROKU_API_KEY || '2d5af390-93f3-4fa4-81b3-614835129c45',
-        APP_NAME: process.env.HEROKU_APP_NAME
+        APP_NAME: process.env.HEROKU_APP_NAME || 'paulhermit22',
        },
        DATABASE_URL: DATABASE_URL,
        DATABASE:
