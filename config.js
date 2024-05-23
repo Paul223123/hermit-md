@@ -16,11 +16,11 @@ process.env.NODE_OPTIONS = '--max_old_space_size=2560'
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG)
 module.exports = {
 	VERSION: 'v4.4.1', 
-    SESSION_ID: process.env.SESSION_ID || '',
-    MODE: (process.env.MODE || 'public').toLowerCase(),
-    HANDLERS: (process.env.PREFIX || '^[!]').trim(),
+    SESSION_ID: process.env.SESSION_ID || '05_23_H_E_R_M_I_T_QS606BI',
+    MODE: (process.env.MODE || 'private').toLowerCase(),
+    HANDLERS: (process.env.PREFIX || '.,^[!]').trim(),
     SEND_READ: (process.env.READ_COMMAND || false),
-    READ_MSG: process.env.READ_MSG === 'true', 
+    READ_MSG: process.env.READ_MSG === 'false', 
     MSG_LOG: convertToBool(process.env.LOG_MSG) || false, 
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
