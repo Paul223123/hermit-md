@@ -16,7 +16,7 @@ process.env.NODE_OPTIONS = '--max_old_space_size=2560'
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG)
 module.exports = {
 	VERSION: 'v4.4.1', 
-    SESSION_ID: process.env.SESSION_ID || '05_23_H_E_R_M_I_T_QS606BI',
+    SESSION_ID: process.env.SESSION_ID || '05_29_H_E_R_M_I_T_ZOGTVQ8',
     MODE: (process.env.MODE || 'private').toLowerCase(),
     HANDLERS: (process.env.PREFIX || '.,^[!]').trim(),
     SEND_READ: (process.env.READ_COMMAND || false),
@@ -25,7 +25,7 @@ module.exports = {
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE),
-    BOT_NAME: process.env.BOT_NAME || '',
+    BOT_NAME: process.env.BOT_NAME || 'Paul',
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(Change this by setting var AUTOMUTE_MSG)_',
     AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group autounmuted!_\n_(Change this by setting var AUTOUNMUTE_MSG)_',
     ANTILINK_MSG: process.env.ANTILINK_MSG || '_Link Not Allowed!_\n_(Change this by setting var ANTILINK_MSG)_',
@@ -46,8 +46,8 @@ module.exports = {
     START_MSG: toBool(process.env.START_MSG || 'true'),
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
-        API_KEY: process.env.HEROKU_API_KEY || '2d5af390-93f3-4fa4-81b3-614835129c45',
-        APP_NAME: process.env.HEROKU_APP_NAME || 'paulhermit22',
+        API_KEY: process.env.HEROKU_API_KEY || 'HRKU-4c7680ff-8da3-4115-abd0-798a2aee6f22',
+        APP_NAME: process.env.HEROKU_APP_NAME || '',
        },
        DATABASE_URL: DATABASE_URL,
        DATABASE:
